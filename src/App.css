@@ -13,12 +13,17 @@ html {
   align-items: center;
   justify-content: space-evenly;
   text-align: center;
+  margin: 2rem;
 }
 
 #disclaimer {
   color: beige;
-  max-width: 40%;
+  max-width: 500px;
   padding: 1.5rem;
+  background-color: grey;
+  border-style: solid;
+  border-radius: 1rem;
+  border-width: 1px;
 }
 
 #disclaimer p {
@@ -34,6 +39,7 @@ html {
   border-style: solid;
   border-radius: 1rem;
   background-color: rgb(155, 90, 102);
+  border-color: beige;
 }
 
 #macros {
