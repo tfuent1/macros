@@ -1,38 +1,77 @@
-.App {
+.app {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+html {
+  background-color: rgb(27, 27, 27);
+}
+
+#page {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#disclaimer {
+  color: beige;
+  max-width: 40%;
+  padding: 1.5rem;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#disclaimer p {
+  line-height: 1.4;
+  font-size: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+#formContainer {
+  text-align: center;
+  width: 350px;
+  height: 400px;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 1rem;
+  background-color: rgb(155, 90, 102);
+}
+
+#macros {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+#gender, #weight, #height, #age, #activity, #button, #result {
+  padding: .5rem;
+  display: flex;
+  flex-direction: column;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#gender, #weight, #height, #age, #activity, #button {
+  max-width: 10rem;
+}
+
+#weight input, #age input {
+  max-width: 5rem;
+}
+
+#weight input, #age input, #gender select, #height select, #activity select, #button input {
+  background-color: rgb(27, 27, 27);
+  color: beige;
+}
+
+#heightCombo {
+  display: flex;
+  flex-direction: row;
+}
+
+#feet, #inches {
+  padding-left: .25rem;
+  padding-right: .25rem;
+}
+
+#genderWeight, #heightAge {
+  display: flex;
+  flex-direction: row;
 }
