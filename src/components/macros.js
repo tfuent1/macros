@@ -60,7 +60,7 @@ const Macros = () => {
                 <p>This is just for information purposes. When starting any diet, you should consult with your physician.</p>
             </div>
             <div id='formContainer'>
-                <h2>Macro-nutrient Calculator</h2>
+                <h2>Calorie Calculator</h2>
                 <form onSubmit={getOptions} id='macros'>
                     <div id='genderWeight'>
                         <div id='gender'>
