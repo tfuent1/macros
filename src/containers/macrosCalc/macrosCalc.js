@@ -1,11 +1,15 @@
 import React, {useState} from 'react'
 import "./macrosCalc.css"
+import Divider from '@mui/material/Divider'
+
 
 function MacrosCalc() {
     const [proteinHigh, setProteinHigh] = useState(0);
     const [proteinLow, setProteinLow] = useState(0);
+    const [carbs, setCarbs] = useState(0);
     const [carbsHigh, setCarbsHigh] = useState(0);
     const [carbsLow, setCarbsLow] = useState(0);
+    const [fat, setFat] = useState(0);
     const [fatHigh, setFatHigh] = useState(0);
     const [fatLow, setFatLow] = useState(0);
     
@@ -18,6 +22,8 @@ function MacrosCalc() {
         let proteinLow = 0;
         let carbsLow = 0;
         let fatLow = 0;
+        let carbs = 0;
+        let fat = 0;
     
         const selectCalories = document.querySelector('#calorieInput');
         const selectWeight2 = document.querySelector('#weightInput2')
@@ -36,15 +42,19 @@ function MacrosCalc() {
             proteinLow = weight * 1.25;
         }
 
+        carbs = (calGoal) * .5 /4;
+        fat = (calGoal - (proteinHigh *4) - (carbs *4)) / 9;
         carbsHigh = (calGoal * .6) / 4;
         fatHigh = (calGoal - (proteinHigh * 4) - (carbsHigh * 4)) / 9;
         carbsLow = (calGoal * .15) / 4;
         fatLow = (calGoal - (proteinLow * 4) - (carbsLow * 4)) / 9;
 
         setProteinHigh(proteinHigh); 
-        setProteinLow(proteinLow)
+        setProteinLow(proteinLow);
+        setCarbs(carbs);
         setCarbsHigh(carbsHigh);
         setCarbsLow(carbsLow);
+        setFat(fat);
         setFatHigh(fatHigh);
         setFatLow(fatLow);
     }
@@ -86,22 +96,33 @@ function MacrosCalc() {
                     </div>
                     <div id='results'>
                         <p>
+                            Normal Diet:
+                            <br></br>
+                            P: {proteinHigh.toFixed(0)} g
+                            <br></br>
+                            C: {carbs.toFixed(0)} g
+                            <br></br>
+                            F: {fat.toFixed(0)} g
+                        </p>
+                        <Divider aria-hidden="true" sx={{bgcolor: "beige"}} orientation="vertical" flexItem />
+                        <p>
                             High-Carb Diet:
                             <br></br>
-                            Protein: {proteinHigh.toFixed(0)} grams
+                            P: {proteinHigh.toFixed(0)} g
                             <br></br>
-                            Carbs: {carbsHigh.toFixed(0)} grams
+                            C: {carbsHigh.toFixed(0)} g
                             <br></br>
-                            Fat: {fatHigh.toFixed(0)} grams
+                            F: {fatHigh.toFixed(0)} g
                         </p>
+                        <Divider aria-hidden="true" sx={{bgcolor: "beige"}} orientation="vertical" flexItem />
                         <p>
                             Low-Carb Diet:
                             <br></br>
-                            Protein: {proteinLow.toFixed(0)} grams
+                            P: {proteinLow.toFixed(0)} g
                             <br></br>
-                            Carbs: {carbsLow.toFixed(0)} grams
+                            C: {carbsLow.toFixed(0)} g
                             <br></br>
-                            Fat: {fatLow.toFixed(0)} grams
+                            F: {fatLow.toFixed(0)} g
                         </p>
                     </div>
                 </form>
