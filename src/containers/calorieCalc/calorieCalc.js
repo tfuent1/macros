@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import "./calorieCalc.css"
+import Divider from '@mui/material/Divider'
 
 const CalorieCalc = () => {
     const [cals, setCals] = useState(0);
@@ -56,7 +57,7 @@ const CalorieCalc = () => {
                 <p>To determine how many calories you should be consuming for a cut, reduce your maintenance calories by 500-1000. I recommend to start slow and increase the amount you take off a little every month or two until you feel you are losing 1-2 lbs per week.</p>
                 <p>To determine how many calories you should be consuming for a bulk, raise your maintenance calories by 500-1000. I recommend starting low (500) and increasing after a month or two until you reach your desired results.</p>
                 <p>Note: It takes 30-60 days on average to see results. Make sure you give this amount of time before making drastic changes to calories. After consistently dieting for 30-60 days, you can start tweaking calories on a weekly or biweekly basis. At this point you should strive to see 1-2 lbs per week difference.</p>
-                <p>This is just for information purposes. When starting any diet, you should consult with your physician.</p>
+                <p id='warning'>This is just for information purposes. When starting any diet, you should consult with your physician.</p>
             </div>
             <div id='formContainer'>
                 <h2>Calorie Calculator</h2>
@@ -125,6 +126,7 @@ const CalorieCalc = () => {
                         <div id='button'>
                             <input type="submit" value="Calculate" />
                         </div>
+                        <Divider aria-hidden="true" sx={{bgcolor: "beige"}} flexItem />
                         <p id='result'>Maintenance Calories: {cals.toFixed(0)} cal
                             <br></br>
                             Cut Calories: {cutHigh.toFixed(0)} cal - {cutLow.toFixed(0)} cal

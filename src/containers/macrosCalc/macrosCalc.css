@@ -25,8 +25,8 @@
   
   #formContainer {
     text-align: center;
-    width: 350px;
-    height: 400px;
+    max-width: fit-content;
+    max-height: fit-content;
     border-width: 1px;
     border-style: solid;
     border-radius: 1rem;
@@ -52,6 +52,11 @@
   #weight input, #calorieGoal input, #button input, #goalDiv select {
     background-color: rgb(27, 27, 27);
     color: beige;
+    border-color: beige;
+    border-radius: .25rem;
+    border-width: 1px;
+    border-style: solid;
+    margin-top: 5px;
   }
 
   #goalWeightDiv {

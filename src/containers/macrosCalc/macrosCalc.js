@@ -68,7 +68,7 @@ function MacrosCalc() {
                 <p>In my calculations, protein is set based off your body weight. If bulking, 1.5 x body weight = protein(grams) is used. If on a low-carb diet and your goal is to maintain or cut, 1.25 x body weight = protein(grams) is used. Otherwise 1 gram of protein per pound of body weight is used. </p>
                 <p>The carbs for the high-carb diets are set at 60% of your total calories. In a low carb diet, 15% is used.</p>
                 <p>Fats are determined by taking the left over calories after deducting protein and carbs, ensuring that we are within 9 calories of the correct calorie goal everytime.</p>
-                <p>This is just for information purposes. When starting any diet, you should consult with your physician.</p>
+                <p id='warning'>This is just for information purposes. When starting any diet, you should consult with your physician.</p>
             </div>
             <div id='formContainer'>
                 <h2>Macro-Nutrient Calculator</h2>
@@ -94,6 +94,7 @@ function MacrosCalc() {
                     <div id='button'>
                         <input type="submit" value="Calculate" />
                     </div>
+                    <Divider aria-hidden="true" sx={{bgcolor: "beige"}} flexItem />
                     <div id='results'>
                         <p>
                             Normal Diet:
