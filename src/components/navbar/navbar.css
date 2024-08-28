@@ -32,7 +32,7 @@
     cursor: pointer;
 }
 
-.portfolio__navbar-links_container a:active {
+.portfolio__navbar-links_container a {
     color: beige;
 }
 
