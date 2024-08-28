@@ -29,9 +29,7 @@ const CalorieCalc = () => {
         const height = (Number(selectHeightFeet.value) * 12) + Number(selectHeightInches.value);
         const age = Number(selectAge.value);
         const activityLevel = Number(selectActivityLevel.value);
-    
-        console.log("Sex: ", sex, "Weight: ", weight, "Height: ", height, "Age: ", age, "Activity Level: ", activityLevel, "Feet: ", selectHeightFeet.value, "Inches: ", selectHeightInches.value)
-    
+        
         if (sex === "Male") {
             cals = ((10 * (weight * 0.453592)) + (6.25 * (height * 2.54)) - (5 * age) + 5) * activityLevel;
         } else {

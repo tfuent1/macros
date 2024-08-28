@@ -27,8 +27,6 @@ function MacrosCalc() {
         const weight = Number(selectWeight2.value);
         const goal = Number(selectGoal.value);
     
-        console.log("Calories: ", calGoal, "Weight: ", weight, "Goal: ", goal, "Input1:", selectWeight2)
-
         //Bulk goal = 3 
         if (goal === 3) {
             proteinHigh = weight * 1.5;
