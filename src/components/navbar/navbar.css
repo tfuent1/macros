@@ -1,0 +1,41 @@
+.portfolio__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+    background-color: rgb(27, 27, 27);
+    border-bottom: beige;
+    border-width: 1px;
+    border-style: solid;
+}
+
+.portfolio__navbar-links {
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.portfolio__navbar-links_container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.portfolio__navbar-links_container p {
+    font-family: var(--font-family);
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: capitalize;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.portfolio__navbar-links_container a:active {
+    color: beige;
+}
+
+.portfolio__navbar-links_container a:visited {
+    color: rgb(155, 90, 102);
+}

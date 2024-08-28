@@ -5,101 +5,13 @@
 }
 
 html {
-  background-color: rgb(27, 27, 27);
-}
+  background: hsla(0, 0%, 5%, 1);
 
-#page {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  text-align: center;
-  margin: 2rem;
-}
+  background: radial-gradient(circle, hsla(0, 0%, 5%, 1) 50%, hsla(349, 27%, 48%, 1) 100%);
 
-#disclaimer {
-  color: beige;
-  max-width: 500px;
-  padding: 1.5rem;
-  background-color: grey;
-  border-style: solid;
-  border-radius: 1rem;
-  border-width: 1px;
-}
+  background: -moz-radial-gradient(circle, hsla(0, 0%, 5%, 1) 50%, hsla(349, 27%, 48%, 1) 100%);
 
-#disclaimer p {
-  line-height: 1.4;
-  font-size: 15px;
-}
+  background: -webkit-radial-gradient(circle, hsla(0, 0%, 5%, 1) 50%, hsla(349, 27%, 48%, 1) 100%);
 
-#formContainer {
-  text-align: center;
-  width: 350px;
-  height: 400px;
-  border-width: 1px;
-  border-style: solid;
-  border-radius: 1rem;
-  background-color: rgb(155, 90, 102);
-  border-color: beige;
-}
-
-#macros {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#gender, #weight, #height, #age, #activity, #button, #result {
-  padding: .5rem;
-  display: flex;
-  flex-direction: column;
-}
-
-#gender, #weight, #height, #age, #activity, #button {
-  max-width: 10rem;
-}
-
-#weight input, #age input {
-  max-width: 5rem;
-}
-
-#weight input, #age input, #gender select, #height select, #activity select, #button input {
-  background-color: rgb(27, 27, 27);
-  color: beige;
-}
-
-#heightCombo {
-  display: flex;
-  flex-direction: row;
-}
-
-#feet, #inches {
-  padding-left: .25rem;
-  padding-right: .25rem;
-}
-
-#genderWeight, #heightAge {
-  display: flex;
-  flex-direction: row;
-}
-
-#result {
-  font-weight: bold;
-  padding-bottom: 1rem;
-  font-size: 15px;
-}
-
-/*for medium sized devices(like tablets)*/
-@media screen and (max-width: 865px) {
-  #page {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-}
-
-/*for small sized devices(like mobile phone)*/
-@media screen and (max-width: 550px) {
-  #formContainer {
-    max-width: fit-content;
-    max-height: fit-content;
-  }
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0C0C0C", endColorstr="#9B5A66", GradientType=1 );
 }

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import "./calorieCalc.css"
 
 const CalorieCalc = () => {
     const [cals, setCals] = useState(0);
@@ -17,7 +18,7 @@ const CalorieCalc = () => {
         let bulkLow = 0;
     
         const selectSex = document.querySelector('#sex');
-        const selectWeight = document.querySelector('#weightInput'); 
+        const selectWeight = document.querySelector('#weightInput1'); 
         const selectHeightFeet = document.querySelector('#heightFeet');
         const selectHeightInches = document.querySelector('#heightInches');
         const selectAge = document.querySelector('#ageInput'); 
@@ -72,7 +73,7 @@ const CalorieCalc = () => {
                         </div> 
                         <div id='weight'>  
                             <label>Weight(lbs)</label>
-                            <input type="number" id='weightInput' />
+                            <input type="number" id='weightInput1' />
                         </div> 
                     </div>
                     <div id='heightAge'>
