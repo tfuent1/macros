@@ -1,11 +1,11 @@
 import './App.css';
-import Macros from './components/macros';
+import CalorieCalc from './components/calorieCalc';
 
 function App() {
   return (
     <div className="App">
       <header />
-      <Macros />
+      <CalorieCalc />
     </div>
   );
 }

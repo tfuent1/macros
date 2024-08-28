@@ -81,3 +81,25 @@ html {
   display: flex;
   flex-direction: row;
 }
+
+#result {
+  font-weight: bold;
+  padding-bottom: 1rem;
+  font-size: 15px;
+}
+
+/*for medium sized devices(like tablets)*/
+@media screen and (max-width: 865px) {
+  #page {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+/*for small sized devices(like mobile phone)*/
+@media screen and (max-width: 550px) {
+  #formContainer {
+    max-width: fit-content;
+    max-height: fit-content;
+  }
+}

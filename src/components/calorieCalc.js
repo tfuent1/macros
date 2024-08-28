@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Macros = () => {
+const CalorieCalc = () => {
     const [cals, setCals] = useState(0);
     const [cutHigh, setCutHigh] = useState(0);
     const [cutLow, setCutLow] = useState(0);
@@ -138,4 +138,4 @@ const Macros = () => {
     );
 }
 
-export default Macros;
+export default CalorieCalc;
