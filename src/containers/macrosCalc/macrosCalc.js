@@ -42,7 +42,7 @@ function MacrosCalc() {
             proteinLow = weight * 1.25;
         }
 
-        carbs = (calGoal) * .5 /4;
+        carbs = (calGoal) * .45 /4;
         fat = (calGoal - (proteinHigh *4) - (carbs *4)) / 9;
         carbsHigh = (calGoal * .6) / 4;
         fatHigh = (calGoal - (proteinHigh * 4) - (carbsHigh * 4)) / 9;
