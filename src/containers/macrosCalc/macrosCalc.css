@@ -76,6 +76,7 @@
     padding-bottom: 1rem;
     font-size: 15px;
     padding: 12px;
+    flex: 1;
   }
   
   /*for medium sized devices(like tablets)*/
